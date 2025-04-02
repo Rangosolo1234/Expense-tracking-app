@@ -15,10 +15,12 @@
      -->
 </template>
 <script setup>
-  import {defineProps} from 'vue';
+  import { defineProps } from 'vue';
 
   const props = defineProps({
-    type: array
-
-  })
+    transactions:{
+      type: String,
+      required: true,
+    }
+  });
 </script>
